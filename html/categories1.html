@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Untitled Document</title>
+<link href="css/reset.css" type="text/css" rel="stylesheet" media="all"/>
+<!-- Phone -->
+<link href="css/phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:320px)">
+<!-- Tablet -->
+<link href="css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:321px) and (max-width:768px)">
+<!-- Desktop -->
+<link href="css/desktop.css" rel="stylesheet" type="text/css" media="only screen and (min-width:769px)">
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="css/desktop.css" />
+<![endif]-->
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/iefix.js"></script>
+<script type="text/javascript" src="js/PIE.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/Rockwell_400.font.js"></script>
+<script type="text/javascript" src="js/Rockwell_700.font.js"></script>
+<script type="text/javascript" src="js/Aller_400.font.js"></script>
+<script type="text/javascript" src="js/Aller_700.font.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>
+
+<<<<<<< .mine
+<!--TOGGLE-->
+<!--<script type="text/javascript" src="js/jquery.color.js"></script> -->
+<script type="text/javascript" src="js/jMenu.js"></script> 
+<!--TOGGLE-->
+=======
+<!--TOGGLE-->
+<script type="text/javascript" src="js/jMenu.js"></script> 
+<!--TOGGLE-->
+>>>>>>> .r429
+<!--Select Box-->
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		if (!$.browser.opera) {
+    
+			// select element styling
+			$('select.selectAdmin').each(function(){
+				var title = $(this).attr('title');
+				if( $('option:selected', this).val() != ''  ) title = $('option:selected',this).text();
+				$(this)
+					.css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
+					.after('<span class="selectAdmin">' + title + '</span>')
+					.change(function(){
+						val = $('option:selected',this).text();
+						$(this).next().text(val);
+						})
+			});
+			
+			$('select.selectAdminTwo').each(function(){
+				var title = $(this).attr('title');
+				if( $('option:selected', this).val() != ''  ) title = $('option:selected',this).text();
+				$(this)
+					.css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
+					.after('<span class="selectAdminTwo">' + title + '</span>')
+					.change(function(){
+						val = $('option:selected',this).text();
+						$(this).next().text(val);
+						})
+			});
+			
+			$('select.selectAdminThree').each(function(){
+				var title = $(this).attr('title');
+				if( $('option:selected', this).val() != ''  ) title = $('option:selected',this).text();
+				$(this)
+					.css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
+					.after('<span class="selectAdminThree">' + title + '</span>')
+					.change(function(){
+						val = $('option:selected',this).text();
+						$(this).next().text(val);
+						})
+			});
+			
+			$('select.country').each(function(){
+				var title = $(this).attr('title');
+				if( $('option:selected', this).val() != ''  ) title = $('option:selected',this).text();
+				$(this)
+					.css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
+					.after('<span class="country">' + title + '</span>')
+					.change(function(){
+						val = $('option:selected',this).text();
+						$(this).next().text(val);
+						})
+			});
+
+		};
+		
+	});
+</script>
+<!--Select Box-->
+<script>
+jQuery(document).ready(function($) {
+	$(".toggle-container").hide(); 
+	$(".toggle-trigger").click(function(){
+		$(this).toggleClass("active").next().slideToggle("slow");
+		return false;
+	});
+		
+//close			
+});
+</script>
+
+<<<<<<< .mine
+
+=======
+>>>>>>> .r429
+</head>
+<body>
+<!--header-->
+<header class="signupHeader">
+	<section class="signupHeader-container">
+    	<ul class="signLog">
+            <li><a href="#">Go to store admin</a></li>
+            <li>Login in as monojit.kumar@navsoft.in</li>
+            <li><input type="button" class="logout" value="LOGOUT"/></li>
+        </ul>
+    </section>
+</header>
+<!--header-->
+<!--navigation start-->
+<section class="adminnav">
+	<section class="container-adminnav">
+    	<ul class="navigation">
+        	<li><a href="#">Home</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Products</a></li>
+            <li class="select"><a href="#">Categories</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Navigation</a></li>
+            <li><a href="#">Promotion</a></li>
+        </ul>
+        <ul class="adminselect">
+        	<li><select class="selectAdmin"><option>Apps</option></select></li>
+            <li><select class="selectAdminTwo"><option>Themes</option></select></li>
+            <li class="last_child"><select class="selectAdminThree"><option>Preference</option></select></li>
+        </ul>
+    </section>
+</section>
+<!--navigation end-->
+<!--body section-->
+<section class="container972 padding22 borderBot">
+	<section class="fleft logoAdmin"><a href="#"><img src="images/top_logotab.png" alt="logo"/></a></section>
+    <section class="headTxt">
+<<<<<<< .mine
+    	<h4>Product Categories</h4>
+        <ul>
+        	<li><a class="createCategoriesIcon" href="#">Create new category</a></li>
+        </ul>
+=======
+    	<h4>Product Categories</h4>
+        <ul>
+        	<li><a class="createCategoriesIcon" href="#">Create new customer</a></li>
+        </ul>
+>>>>>>> .r429
+    </section>
+     <div class="clear"></div>
+</section>
+<!--body section-->
+<!--Product area-->
+<section class="accordion-wrapper" id="jQ-menu">
+	<h2>Custom Category</h2>
+    <section class="accordionArea">
+<<<<<<< .mine
+    	<!--<h3 class="acc_trigger toggle">Eye Wear<span>(0 Products)</span><div class="accordionArrow downarrow"></div></h3>
+        <div class="acc_container">
+        	<h3 class="acc_trigger">Eye Wear<span>(0 Products)</span><div class="accordionArrow downarrow"></div></h3>
+            <div class="acc_container">
+            
+            </div>
+        </div>-->
+        <!--Toggle-->
+        <ul class="mainToggle">
+			<!-- <li><span class="toggle mainli">Home Decor  (0 Products)<div class="accordionArrow downarrow"></div></span>
+				<ul>
+					<li><span class="toggle second">Curtains</span>
+						<ul><li><span class="toggle third">Silk Lenin</span></li></ul>
+					</li>
+				</ul>
+			</li> -->
+            <li><span class="toggle mainli">Eye Wear  (0 Products)<div class="accordionArrow downarrow"></div></span>
+                <ul> 
+                    <li><span class="toggle first" id="first">Categories 1</span> 
+                        <ul> 
+                            <li><span class="toggle second">Sub Categories 1</span>
+                            	<ul>
+                                	<li><span class="toggle third"> Sub Sub Categories 1</span></li>
+                                    <li><span class="toggle third"> Sub Sub Categories 1</span></li>
+                                </ul>
+                            </li> 
+                            <li><span class="toggle second">Sub Categories 2</span></li> 
+                            <li><span class="toggle second">Sub Categories 3</span></li> 
+                        </ul> 
+                    </li> 
+                    <li><span class="toggle first" id="">Categories 2</span>
+						<ul> 
+                            <li><span class="toggle second">Sub Categories 1</span>
+                            	<ul>
+                                	<li><span class="toggle third"> Sub Sub Categories 1</span></li>
+                                    <li><span class="toggle third"> Sub Sub Categories 1</span></li>
+                                </ul>
+                            </li> 
+                            <li><span class="toggle second">Sub Categories 2</span></li> 
+                            <li><span class="toggle second">Sub Categories 3</span></li> 
+                        </ul>
+					</li> 
+                    <li><span class="toggle first" id="">Categories 3</span></li>
+                </ul> 
+            </li> 
+            <li><span class="toggle mainli">Eye Wear  (0 Products)<div class="accordionArrow downarrow"></div></span></li> 
+		</ul>
+        <!--toggle-->
+=======
+        <!--Toggle-->
+        	<ul class="mainToggle"> 
+                <li><span class="toggle mainli" id="main">Eye Wear  (0 Products)<span id="arrowMain" class="accordionArrow"></span></span>
+                    <ul> 
+                        <li><span class="toggle first" id="first">Categories 1</span> 
+                            <ul> 
+                                <li><span class="toggle second">Sub Categories 1</span>
+                                    <ul>
+                                        <li><span class="toggle third">Sub Sub Categories 1</span></li>
+                                        <li><span class="toggle third">Sub Sub Categories 1</span></li>
+                                    </ul>
+                                </li> 
+                                <li><span class="toggle second">Sub Categories 2</span></li> 
+                                <li><span class="toggle second">Sub Categories 3</span></li> 
+                            </ul> 
+                        </li> 
+                        <li><span class="toggle first" id="firstB">Categories 2</span></li> 
+                        <li><span class="toggle first" id="firstC">Categories 3</span></li>
+                    </ul> 
+                </li> 
+                <li><span class="toggle mainli" id="mainTwo">Eye Wear  (0 Products)<div class="accordionArrow downarrow"></div></span></li> 
+		     </ul>
+        <!--toggle-->
+>>>>>>> .r429
+    </section>
+    <div class="clear"></div>
+</section>
+<!--Product area-->
+
+<footer class="signupFoot">
+	<p>&copy; 2012 TiendaOnlinePro.com</p>
+    <ul class="signFoot">
+    	<li><a href="#"><img src="images/signfacebook.png" alt="fb"/></a></li>
+        <li><a href="#"><img src="images/signTuiter.png" alt="fb"/></a></li>
+        <li><a href="#"><img src="images/signRss.png" alt="fb"/></a></li>
+    </ul>
+</footer>
+
+</body>
+</html>

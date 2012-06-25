@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Webshop</title>
+<link href="css/reset.css" type="text/css" rel="stylesheet" media="all"/>
+<!-- Phone -->
+<link href="css/phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:320px)">
+<!-- Tablet -->
+<link href="css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:321px) and (max-width:768px)">
+<!-- Desktop -->
+<link href="css/desktop.css" rel="stylesheet" type="text/css" media="only screen and (min-width:769px)">
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="css/desktop.css" />
+<![endif]-->
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/iefix.js"></script>
+<script type="text/javascript" src="js/PIE.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/Rockwell_400.font.js"></script>
+<script type="text/javascript" src="js/Rockwell_700.font.js"></script>
+<script>
+Cufon.replace('.more a, .bannerContain h3, .bannerContain h3 span, ul.bannerList li, .formAreaWrapper h3, .tabLoop h5, .formAreaWrapper h3 span, .pwrapper p', { fontFamily: 'Rockwell' });
+</script>
+
+<!--Image change-->
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script> 
+<script type="text/javascript">  
+ $(document).ready(function() {  
+  
+ function imageresize() {  
+ var contentwidth = $('#content').width();  
+ if ((contentwidth) < '375'){  
+ $('.changeimg').attr('src','images/tabsmal.jpg');  
+ } else {  
+ $('.changeimg').attr('src','images/tab.jpg');  
+ }  
+ }  
+  
+ imageresize();//Triggers when document first loads      
+  
+ $(window).bind("resize", function(){//Adjusts image when browser resized  
+ imageresize();  
+ }); 
+  
+ });  
+ </script>
+ 
+ <script type="text/javascript">  
+ $(document).ready(function() {  
+  
+ function imageresize() {  
+ var contentwidth = $('#comment').width();  
+ if ((contentwidth) < '470'){  
+ $('.imgchg').attr('src','images/icon5smal.jpg');  
+ } else {  
+ $('.imgchg').attr('src','images/icon5.jpg');  
+ }  
+ }  
+  
+ imageresize();//Triggers when document first loads      
+  
+ $(window).bind("resize", function(){//Adjusts image when browser resized  
+ imageresize();  
+ }); 
+  
+ });  
+ </script>
+ 
+  <script type="text/javascript">  
+ $(document).ready(function() {  
+  
+ function imageresize() {  
+ var contentwidth = $('#comment2').width();  
+ if ((contentwidth) < '470'){  
+ $('.imgchg2').attr('src','images/icon5smal.jpg');  
+ } else {  
+ $('.imgchg2').attr('src','images/icon5.jpg');  
+ }  
+ }  
+  
+ imageresize();//Triggers when document first loads      
+  
+ $(window).bind("resize", function(){//Adjusts image when browser resized  
+ imageresize();  
+ }); 
+  
+ });  
+ </script>
+ <script type="text/javascript">  
+ $(document).ready(function() {  
+  
+ function imageresize() {  
+ var contentwidth = $('.logo').width();  
+ if ((contentwidth) < '690'){  
+ $('.logochange').attr('src','images/top_logotab.png');  
+ } else {  
+ $('.logochange').attr('src','images/top_logo.png');  
+ }  
+ }  
+  
+ imageresize();//Triggers when document first loads      
+  
+ $(window).bind("resize", function(){//Adjusts image when browser resized  
+ imageresize();  
+ }); 
+  
+ });  
+ </script>
+ <!--Image change-->
+ 
+</head>
+<body id="bdcliclk" class="fnction">
+<!--header-->
+<header>
+	<section class="headerWrapper">
+    	<nav class="fright">
+        	<ul>
+            	<li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Característica</a></li>
+                <li><a href="#">Tour</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Planes y Precio</a></li>
+                <li class="whiteline"><a href="#">Contact</a></li>
+                <li><input type="button" class="loginBtn" value="LOGIN"/></li>
+                <li>
+                <select>
+                <option>SPANISH</option>
+                <option>ENGLISH</option>
+                </select>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="clear"></div>
+    </section>
+</header>
+<!--header-->
+<!--Banner start-->
+<section class="banner">
+	<section class="bannerWrapper">
+    	<section class="bannerContain fleft">
+            <section class="logo">
+            	<div class="clear20"></div>
+                <a href="#"><img src="images/top_logo.png"  class="logochange" alt="logo"/></a>
+            </section>
+            <h3> En 2 minutos comienza a vender por internet.<span>Gratis!</span></h3>
+            <ul class="bannerList">
+            	<li>Vende tus productos/servicios en todo el mund</li>
+                <li>Recibe pagos con tarjeta de crédito o débit</li>
+                <li>Recibe pagos en Oxxo y 7eleve</li>
+                <li>Lleva el control de tus ventas, clientes y pedido</li>
+                <li>Vende tus productos/servicios en diferentes tipos de moned</li>
+                <li>Configura tu tienda online para que aparezca en tu propia página we</li>
+                <li>Y mucho mas</li>
+            </ul>
+        </section>
+        <div class="clear"></div>
+    </section>
+</section>
+<!--Banner end-->
+<!--form area-->
+<section class="formArea">
+	<section class="formAreaWrapper">
+    	<h3>Open your webshop, now! <span>For free, No risk.</span></h3>
+        <div class="formContnr">
+        	<div class="fleft" style="padding:14px 0;;">
+                <input type="text" class="txt fleft" value="Your Store Name" onClick="if(this.value=='Your Store Name'){this.value='';}" onBlur="if(this.value==''){this.value='Your Store Name';}"/>
+                <input type="text" class="txt fleft" value="Email Addresss" onClick="if(this.value=='Email Addresss'){this.value='';}" onBlur="if(this.value==''){this.value='Email Addresss';}"/>
+                <input type="password" class="txt fleft" value="Password" onClick="if(this.value=='Password'){this.value='';}" onBlur="if(this.value==''){this.value='Password';}"/>
+                <input type="button" class="createStoreBtn fleft" value="Create your store now!"/>
+            </div>
+        </div>
+        <div class="shadow"></div>
+    </section>
+</section>
+<!--form area-->
+<!--MAIN BODY -->
+<section class="mainBody">
+	<section class="mainBodyWrapper">
+    	<section class="tab fleft" id="content">
+        	<img src="images/tab.jpg" class="changeimg" alt="tab"/>
+        </section>
+        <section class="tabRight fleft">
+        	<h4><span>TiendaOnlinePro</span> is a complete ecommerce solution to build in an easy way a website with an<br/>
+            e-commerce platform where users can sale and buy products and services online</h4>
+            <div class="clear20"></div>
+            <!--tabLoop-->
+            <section class="tabLoop">
+            	<img src="images/icon1.jpg" alt="icon"/>
+                <h5>More than 100 design<br/>
+                templates for your<br/>
+                webshop</h5>
+            </section>
+            <!--tabLoop-->
+            <!--tabLoop-->
+            <section class="tabLoop">
+            	<img src="images/icon2.jpg" alt="icon2"/>
+                <h5>Secure Shopping Cart</h5>
+                <p>Receive payments with credit or debit
+                card, in OXXO or 7 eleven stores</p>
+            </section>
+            <!--tabLoop-->
+            <!--tabLoop-->
+            <section class="tabLoop">
+            	<img src="images/icon.jpg" alt="icon"/>
+                <h5>Ecommerce</h5>
+                <p>TiendaOnlinePro works with the most
+                secure and popular ecommerce sites
+                (PayPal & DineroMail)</p>
+            </section>
+            <!--tabLoop-->
+            <!--tabLoop-->
+            <section class="tabLoop">
+            	<img src="images/icon4.jpg" alt="icon4"/>
+                <h5>Take a Tour</h5>
+                <p>Know how TiendaOnlinePro helps you
+                to improve your sales</p>
+            </section>
+            <!--tabLoop-->
+        </section>
+        <div class="clear"></div>
+        <div class="clear30"></div>
+        <section class="commentArea">
+            <!--comment area-->
+            <section class="comment fleft" id="comment">
+            	<img src="images/icon5.jpg" class="imgchg" alt="icon5"/>
+                <p>Lorem Ipsum is simply dummy text of the printing and<br/> 
+                typesetting industry. Lorem Ipsum has been the industry's<br/>
+                standard dummy.
+                <a href="#" class="name">Richard Bell</a>
+                </p>
+            </section>
+            <!--comment area-->
+            <!--comment area-->
+            <section class="comment fleft noborder nomrginR" id="comment2">
+                <img src="images/icon5.jpg" class="imgchg2" alt="icon5"/>
+                <p>Lorem Ipsum is simply dummy text of the printing and<br/> 
+                typesetting industry. Lorem Ipsum has been the industry's<br/>
+                standard dummy.
+                <a href="#" class="name">Richard Bell</a>
+                </p>
+            </section>
+            <!--comment area-->
+        </section>
+        <div class="clear50"></div>
+    </section>
+</section>
+<!--MAIN BODY -->
+<div class="fotopLine"></div>
+<footer>
+	<section class="footWrap">
+    	<section class="leftFooter">
+    	<h2>follow us on:</h2>
+    	<ul class="follow">
+            <li><a href="#"><img src="images/facebook.png" alt="facebook"/></a></li>
+            <li><a href="#"><img src="images/twiter.png" alt="twiter"/></a></li>
+            <li><a href="#"><img src="images/rss.png" alt="rss"/></a></li>
+        </ul>
+        </section>
+        <!--footerlistitem start-->
+        <section class="footerlistitem fleft">
+        	<h4>TiendaOnlinePro</h4>
+            <ul>
+            	<li><a href="#">About Us</a></li>
+                <li><a href="#">Careers We're Hiring!</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </section>
+        <!--footerlistitem end-->
+        <!--footerlistitem start-->
+        <section class="footerlistitem fleft">
+        	<h4>Overview</h4>
+            <ul>
+            	<li><a href="#">Sell Online</a></li>
+                <li><a href="#">Online Store</a></li>
+                <li><a href="#">Store Design</a></li>
+                <li><a href="#">Marketing & SEO</a></li>
+                <li><a href="#">Mobile Commerce</a></li>
+                <li><a href="#">App Store</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </section>
+        <!--footerlistitem end-->
+        <!--footerlistitem start-->
+        <section class="footerlistitem fleft nomargin">
+        	<h4>FAQ</h4>
+            <ul>
+            	<li><a href="#">Wiki</a></li>
+                <li><a href="#">Technical Support</a></li>
+                <li><a href="#">Forums</a></li>
+                <li><a href="#">App Store</a></li>
+                <li><a href="#">Theme Store</a></li>
+                <li><a href="#">Experts</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Partner Program</a></li>
+            </ul>
+        </section>
+        <!--footerlistitem end-->
+    <div class="clear"></div>
+    </section>
+</footer>
+<section class="botFooter">
+	<p>&copy; 2012 TiendaOnlinePro.com</p>
+</section>
+</body>
+</html>

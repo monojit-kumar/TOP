@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Webshop</title>
+<link href="css/reset.css" type="text/css" rel="stylesheet" media="all"/>
+<!-- Phone -->
+<link href="css/phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:320px)">
+<!-- Tablet -->
+<link href="css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:321px) and (max-width:768px)">
+<!-- Desktop -->
+<link href="css/desktop.css" rel="stylesheet" type="text/css" media="only screen and (min-width:769px)">
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="css/desktop.css" />
+<![endif]-->
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/iefix.js"></script>
+<script type="text/javascript" src="js/PIE.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/Rockwell_400.font.js"></script>
+<script type="text/javascript" src="js/Rockwell_700.font.js"></script>
+<script type="text/javascript" src="js/Aller_400.font.js"></script>
+<script type="text/javascript" src="js/Aller_700.font.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<!--Select Box-->
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		if (!$.browser.opera) {
+    
+			// select element styling
+			$('select.selectAdmin').each(function(){
+				var title = $(this).attr('title');
+				if( $('option:selected', this).val() != ''  ) title = $('option:selected',this).text();
+				$(this)
+					.css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
+					.after('<span class="selectAdmin">' + title + '</span>')
+					.change(function(){
+						val = $('option:selected',this).text();
+						$(this).next().text(val);
+						})
+			});
+			
+			$('select.selectAdminTwo').each(function(){
+				var title = $(this).attr('title');
+				if( $('option:selected', this).val() != ''  ) title = $('option:selected',this).text();
+				$(this)
+					.css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
+					.after('<span class="selectAdminTwo">' + title + '</span>')
+					.change(function(){
+						val = $('option:selected',this).text();
+						$(this).next().text(val);
+						})
+			});
+			
+			$('select.selectAdminThree').each(function(){
+				var title = $(this).attr('title');
+				if( $('option:selected', this).val() != ''  ) title = $('option:selected',this).text();
+				$(this)
+					.css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
+					.after('<span class="selectAdminThree">' + title + '</span>')
+					.change(function(){
+						val = $('option:selected',this).text();
+						$(this).next().text(val);
+						})
+			});
+			
+			$('select.country').each(function(){
+				var title = $(this).attr('title');
+				if( $('option:selected', this).val() != ''  ) title = $('option:selected',this).text();
+				$(this)
+					.css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
+					.after('<span class="country">' + title + '</span>')
+					.change(function(){
+						val = $('option:selected',this).text();
+						$(this).next().text(val);
+						})
+			});
+
+		};
+		
+	});
+</script>
+<!--Select Box-->
+<!--Image change start-->
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script> 
+<script type="text/javascript">  
+ $(document).ready(function() {  
+  
+ function imageresize() {  
+ var contentwidth = $('.customer_highlightimg').width();  
+ if ((contentwidth) < 648){
+ $('.changeimg').attr('src','images/customer_highlight_tablet.jpg');  
+ } else {
+ $('.changeimg').attr('src','images/customer_highlight.jpg');
+ } if((contentwidth) < 476){
+	$('.changeimg').attr('src','images/customer_highlight_phone.jpg'); 
+ }
+ }
+  
+  
+ imageresize();//Triggers when document first loads      
+  
+ $(window).bind("resize", function(){//Adjusts image when browser resized  
+ imageresize();  
+ }); 
+  
+ });  
+ </script>
+<!--Image change end-->
+</head>
+<body id="bdcliclk" class="fnction">
+<!--header-->
+<header class="signupHeader">
+	<section class="signupHeader-container">
+    	<section class="fleft logoAdmin"><a href="#"><img src="images/logonew.png" alt="logo"/></a></section>
+    	<ul class="signLog">
+            <li><a href="#">Go to store admin</a></li>
+            <li>Login in as monojit.kumar@navsoft.in</li>
+            <li><input type="button" class="logout" value="LOGOUT"/></li>
+        </ul>
+    </section>
+</header>
+<!--header-->
+<!--navigation start-->
+<section class="adminnav">
+	<section class="container-adminnav">
+    	<ul class="navigation">
+        	<li><a href="#">Home</a></li>
+            <li><a href="#">Orders</a></li>
+            <li class="select"><a href="#">Customers</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Navigation</a></li>
+            <li><a href="#">Promotion</a></li>
+        </ul>
+        <div class="adminselect">
+        	<!--<li><select class="selectAdmin"><option>Apps</option></select></li>
+            <li><select class="selectAdminTwo"><option>Themes</option></select></li>
+            <li class="last_child"><select class="selectAdminThree"><option>Preference</option></select></li>-->
+            <ul id="secondary">
+                <li class="added"><a class="nav-link"  id="nav-link" href="#">Apps</a>
+                    <div class="nav-dropdown show">
+                        <ul>
+                            <li class="nav-manage"><a href="#">Manage Apps</a></li>
+                            <li class="getMore">
+                                <a href="#">Get More Apps</a>
+                                <span>visit the App Store</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="added1"><a class="nav-link" id="nav-link1" href="#">Themes</a>
+                    <div class="nav-dropdown show1">
+                        <ul>
+                            <li class="theme"><a href="#">Theme Settings</a>
+                            	<div class="tooltip_area3 widthprdct">
+                                    <p>Click here to edit your content</p>
+                                    <span class="tolArrow2"></span>
+                                </div>
+                            </li>
+                            <li class="tmplteEditor"><a href="#">Template Editor</a></li>
+                            <li class="mngeTheme"><a href="#">Manage Themes</a></li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="last_child added2"><a class="nav-link" id="nav-link2" href="#">Preferences</a>
+                    <div class="nav-dropdown show2">
+                        <ul>
+                            <li class="settings"><a href="#">General Settings</a></li>
+                            <li class="taxes"><a href="#">Regions &amp; Taxes</a>
+                            	<div class="tooltip_area4 domainprdct">
+                                    <p>Click here to manage your domain name</p>
+                                    <span class="tolArrow2"></span>
+                                </div>
+                            </li>
+                            <li class="payment"><a href="#">Checkout &amp; Payment</a>
+                            	<div class="tooltip_area5 domainprdct">
+                                    <p>Click here to manage your domain name</p>
+                                    <span class="tolArrow2"></span>
+                                </div>
+                            </li>
+                            <li class="shipping"><a href="#">Shipping</a>
+                            	<div class="tooltip_area6 domainprdct">
+                                    <p>Click here to manage your domain name</p>
+                                    <span class="tolArrow2"></span>
+                                </div>
+                            </li>
+                            <li class="services"><a href="#">Fulfillment Services</a></li>
+                            <li class="emailNotification"><a href="#">Email &amp; Notifications</a></li>
+                            <li class="domain"><a href="#">DNS &amp; Domains</a>
+                            	<div class="tooltip_area7 domainprdct">
+                                    <p>Click here to manage your domain name</p>
+                                    <span class="tolArrow2"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </section>
+</section>
+<!--navigation end-->
+<!--body section-->
+<section class="container padding22 borderBot">
+    <section class="headTxt">
+    	<h4>Reebok Sunglasses</h4>
+        <ul>
+        	<li><a class="editIcon" href="#">Edit</a></li>
+            <li><a class="duplicateIcon" href="#">Duplicate current product</a></li>
+            <li><a class="trash" href="#"><img src="images/trash.gif" alt="trash"/></a></li>
+        </ul>
+    </section>
+     <div class="clear"></div>
+</section>
+<!--body section-->
+<!--Product area-->
+<section class="container">
+	<section class="msg">
+    	<h3>Reebok Sunglasses was successfully created! <a href="#">View it in your store</a> or <a href="#">create another product</a></h3>
+    </section>
+    <!--productLeft-->
+    <section class="productLeft">
+    	<section class="productimg">
+    	<img src="images/productImg.jpg" alt="product"/>
+        <div class="editDelete">
+        	<a href="#" class="crop">Edit image</a><a href="#" class="deleteIcon">Delete image</a>
+        </div>
+    </section>
+    	<h2>Product Images</h2>
+        <p class="italic">(You can upload .png, .gif or .jpg)</p>
+        <input type="file"/>
+        <h2>Product Visibility</h2>
+        <p>You can hide this product on your store by<br/>
+        setting its visibility to "hidden"</p>
+        <div class="clear10"></div>
+        <select class="productVisibility"><option></option></select> 
+    </section>
+    <!--productLeft-->
+    
+    <!--customerInfo-->
+		<section class="product_details">
+        	<section class="header"><p>Description</p></section>
+            <section class="dts_prdct">
+            	<p>Feature Sunglasses: 100% UV Protected. Stylish Frame. Reebok Logo & Tag Comfort Fit. Sunglasses in the most favoured aviator style Must wear to keep the eyes protected from the harsh summer sun These sunglasses come in a Reebok PU carrying case that keeps them safe  most favoured aviator style Must wear to keep the eyes protected from the harsh summer sun These sunglasses come in a Reebok PU carrying case that keeps them safe.</p>
+            </section>
+            <div class="clear15"></div>
+            <section class="header"><p>Properties</p></section>
+            <section class="dts_prdct">
+            	<p class="properties_line"><span class="type">Product type:</span><span class="prdct-name">Sunglasses</span></p>
+                <p class="properties_line"><span class="type">Product vendor:</span><span class="prdct-name">Reebok</span></p>
+                <p class="properties_line"><span class="type">Inventory:</span><span class="prdct-name">1 in stock for 1 variant</span></p>
+                <p class="properties_line"><span class="type">Title</span><span class="prdct-name">Default Title</span></p>
+            </section>
+            <div class="clear15"></div>
+            <section class="nomargin header"><p>Tags</p></section>
+            <p class="tag">Must wear to keep the eyes protected from the harsh summer sun.</p>
+            <section class="header"><p>Collections</p></section>
+            <section class="dts_prdct">
+            	<p>This product belongs to the following collections:</p>
+                <ul class="collection">
+                	<li>Eye Wear</li>
+                    <li>Eye Wear</li>
+                </ul>
+            </section>
+            <div class="clear10"></div>
+            
+        </section>
+    <!--customerInfo-->
+    <div class="clear"></div>
+</section>
+<!--Product area-->
+
+<footer class="signupFoot">
+	<p>&copy; 2012 TiendaOnlinePro.com</p>
+    <ul class="signFoot">
+    	<li><a href="#"><img src="images/signfacebook.png" alt="fb"/></a></li>
+        <li><a href="#"><img src="images/signTuiter.png" alt="fb"/></a></li>
+        <li><a href="#"><img src="images/signRss.png" alt="fb"/></a></li>
+    </ul>
+</footer>
+
+</body>
+</html>

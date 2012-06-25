@@ -1,0 +1,139 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+small,sub,sup
+{
+  font-size:.83em;
+}
+sub
+{
+  vertical-align:sub;
+}
+sup
+{
+  vertical-align:super;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+	text-decoration:none;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #e2e2e2;
+    margin:1em 0;
+    padding:0;
+	margin:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*Custom font*/
+@font-face {
+    font-family: 'AllerBold';
+    src: url('fonts/aller.eot');
+    src: url('fonts/aller.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aller.woff') format('woff'),
+         url('fonts/aller.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+textarea{ overflow:auto; resize:none;}
+textarea:focus, select:focus, input:focus{
+    outline: none;
+}
+/*Float*/
+.fleft{ float:left;}
+.fright{ float:right;}
+
+/* Clear Div*/
+.clear{clear:both;}
+.clear3{ clear:both; height:3px;}
+.clear5{ clear:both; height:5px;}
+.clear10{ height:10px; clear:both;}
+.clear15{ height:15px; clear:both;}
+.clear17{ height:17px; clear:both;}
+.clear20{ height:20px; clear:both;}
+.clear25{ height:25px; clear:both;}
+.clear30{ height:30px; clear:both;}
+.clear40{ height:40px; clear:both;}
+.clear50{ height:50px; clear:both;}

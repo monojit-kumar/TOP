@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Webshop</title>
+<link href="css/reset.css" type="text/css" rel="stylesheet" media="all"/>
+<!-- Phone -->
+<link href="css/phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:320px)">
+<!-- Tablet -->
+<link href="css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:321px) and (max-width:768px)">
+<!-- Desktop -->
+<link href="css/desktop.css" rel="stylesheet" type="text/css" media="only screen and (min-width:769px)">
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="css/desktop.css" />
+<![endif]-->
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/iefix.js"></script>
+<script type="text/javascript" src="js/PIE.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/Rockwell_400.font.js"></script>
+<script type="text/javascript" src="js/Rockwell_700.font.js"></script>
+<script type="text/javascript" src="js/Aller_400.font.js"></script>
+<script type="text/javascript" src="js/Aller_700.font.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+<body id="bdcliclk" class="fnction">
+<!--header-->
+<header class="signupHeader">
+	<section class="signupHeader-container">
+    	<section class="fleft logoAdmin"><a href="#"><img src="images/logonew.png" alt="logo"/></a></section>
+    	<ul class="signLog">
+            <li><a href="#">Go to store admin</a></li>
+            <li>Login in as monojit.kumar@navsoft.in</li>
+            <li><input type="button" class="logout" value="LOGOUT"/></li>
+        </ul>
+    </section>
+</header>
+<!--header-->
+<!--navigation start-->
+<section class="adminnav">
+	<section class="container-adminnav">
+    	<ul class="navigation">
+        	<li><a href="#">Home</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Products</a></li>
+            <li class="select"><a href="#">Categories</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Navigation</a></li>
+            <li><a href="#">Promotion</a></li>
+        </ul>
+        <div class="adminselect">
+        	<!--<li><select class="selectAdmin"><option>Apps</option></select></li>
+            <li><select class="selectAdminTwo"><option>Themes</option></select></li>
+            <li class="last_child"><select class="selectAdminThree"><option>Preference</option></select></li>-->
+            <ul id="secondary">
+                <li class="added"><a class="nav-link"  id="nav-link" href="#">Apps</a>
+                    <div class="nav-dropdown show">
+                        <ul>
+                            <li class="nav-manage"><a href="#">Manage Apps</a></li>
+                            <li class="getMore">
+                                <a href="#">Get More Apps</a>
+                                <span>visit the App Store</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="added1"><a class="nav-link" id="nav-link1" href="#">Themes</a>
+                    <div class="nav-dropdown show1">
+                        <ul>
+                            <li class="theme"><a href="#">Theme Settings</a>
+                            	
+                            </li>
+                            <li class="tmplteEditor"><a href="#">Template Editor</a></li>
+                            <li class="mngeTheme"><a href="#">Manage Themes</a></li>
+                        	
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="last_child added2"><a class="nav-link" id="nav-link2" href="#">Preferences</a>
+                    <div class="nav-dropdown show2">
+                        <ul>
+                            <li class="settings"><a href="#">General Settings</a></li>
+                            <li class="taxes"><a href="#">Regions &amp; Taxes</a>
+                            	
+                            </li>
+                            <li class="payment"><a href="#">Checkout &amp; Payment</a>
+                            	
+                            </li>
+                            <li class="shipping"><a href="#">Shipping</a>
+                            	
+                            </li>
+                            <li class="services"><a href="#">Fulfillment Services</a></li>
+                            <li class="emailNotification"><a href="#">Email &amp; Notifications</a></li>
+                            <li class="domain"><a href="#">DNS &amp; Domains</a>
+                            	
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</section>
+<!--navigation end-->
+<!--body section-->
+<section class="container972 padding22 borderBot">
+	<!--<section class="fleft logoAdmin"><a href="#"><img src="images/top_logotab.png" alt="logo"/></a></section>-->
+    <section class="headTxt">
+    	<h4>Products</h4>
+        <ul>
+        	<li><a href="#" class="createIcon">Add new products</a></li>
+            <li><a href="#" class="exportIcon">Export products</a></li>
+            <li><a href="#" class="importIcon">Import products</a></li>
+        </ul>
+    </section>
+     <div class="clear"></div>
+</section>
+<!--body section-->
+<!--Product area-->
+<section class="accordion-wrapper">
+    <form action="." method="post" class="niceform"><section class="accordionArea">
+    		<h2 class="fleft">Add your new product</h2><div class="cancelBtn"><a href="#"><span>x</span>Cancel</a></div>
+            <div class="tittle"><p>New Product </p></div>
+            <div class="cs-categories"><label>Product title</label><div class="cusInput"><input type="text" class="createCommon"/><p>Examples: Sugar Maple Sapling, 14" Sport Boomerang</p></div></div>
+            <div class="cs-categories"><label>Describe your product<!--<span>(optional)</span>--></label>
+            <textarea name="" cols="" rows="" class="editorBig"></textarea>
+            </div>
+    	 <section class="categories_form">
+         <div class="tittle"><p>Properties</p></div>
+            <fieldset>
+            <div class="cs-categories"><label>Product type</label><div class="cusInput"><input type="text" class="createCommon"/><p>Upload images for your category</p>
+            </div></div>
+            </fieldset>
+           <div class="cs-categories"><label>Product vendor</label><div class="cusInput"><input type="text" class="createCommon"/><p>Examples: Sugar Maple Sapling, 14&quot; Sport Boomerang</p>
+            </div></div>
+           <div class="cs-categoriesprdct"><label class="w137">Selling price</label><div class="cusInput_smal"><input type="text" class="smaltxt"/></textarea><p>INR</p></div><label>Selling price</label><div class="cusInput_smal"><input type="text" class="smaltxt"/></textarea>
+           <p>Kg.</p></div><label>Selling price</label><div class="cusInput_smal"><input type="text" class="smaltxt"/></textarea><p>INR</p></div></div>
+           <p class="check"><input type="checkbox"/><span>Charge taxes</span></p>
+           <p class="check"><input type="checkbox"/><span>Require a shipping address not needed for services or digital goods</span></p>
+           <div class="cs-categories"><label>Product Options</label><div class="customInput"><p>This is how your customers distinguish variations of your product.</p></div></div>
+           <p class="checkboxlight"><input type="checkbox"/><span>This product's variants have multiple options that distinguish them.</span></p>
+           <div class="tittle"><p>Inventory</p></div>
+           <div class="cs-categories"><label>SKU (optional) </label><div class="cusInput"><input type="text" class="createCommon"/><p> Unique identifier for organization of larger inventories.</p>
+            </div></div>
+            
+           <div class="tittle"><p>Categories</p></div>
+           <p class="adtxt">Tags are descriptive keywords that help customers find what they need. Enter any number of tags separated by a comma.</p>
+           <input type="text" class="createCommon">
+           <div class="clear20"></div>
+          <div class="tittle"><p>Categories</p></div>
+          <p class="adtxtblue">Choose the custom collections this product should belong to:</p>
+          <!--lightbox_categorieList-->
+          <div class="lightbox_categorieList">
+          	<div class="headline">
+            	<p>Categories List<span><a href="#"><img src="images/cross.png" alt="cross"/></a></span></p>
+                
+            </div>
+          </div>
+          <!--lightbox_categorieList-->
+          <div class="clear25"></div>
+          <div class="tittle"><p>Featured</p></div>
+           <p class="adtxt">Choose this optoopn to feature your product in homepage (only 6 products could be featured at a time)</p>
+           <p class="check"><input type="checkbox"/><span>Frontpage</span></p>
+            
+        </section>
+         <!--image-->
+         <section class="imageUpload">
+         	<section class="image"><img src="images/image.jpg" alt="img"/></section>
+            <section class="imgbrowse">
+            	<h1>Product Images</h1>
+                <p>Upload images for your product below</p>
+                <input type="file" name="upload">
+            </section>
+         </section>
+         <!--image-->
+        <div class="clear"></div>
+    </section>
+    <div class="clear"></div>
+    <div class="creatCustmArea"><input type="submit" class="createCustomer" value="Create Product"/><span>or <a href="#">cancel</a></span></div></form>
+</section>
+<!--Product area-->
+
+<footer class="signupFoot">
+	<p>&copy; 2012 TiendaOnlinePro.com</p>
+    <ul class="signFoot">
+    	<li><a href="#"><img src="images/signfacebook.png" alt="fb"/></a></li>
+        <li><a href="#"><img src="images/signTuiter.png" alt="fb"/></a></li>
+        <li><a href="#"><img src="images/signRss.png" alt="fb"/></a></li>
+    </ul>
+</footer>
+
+</body>
+</html>
